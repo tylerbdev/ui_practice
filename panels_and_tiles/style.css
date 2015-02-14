@@ -25,14 +25,8 @@ html {
 }
 
 body {
-	/*background-image: url('bg.png');*/
+	background-image: url('bg.png');
 	background-color: #ebebeb;
-	background: -moz-linear-gradient(top, rgba(204,204,204,1) 0%, rgba(235,235,235,1) 31%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,204,204,1)), color-stop(31%,rgba(235,235,235,1)));
-background: -webkit-linear-gradient(top, rgba(204,204,204,1) 0%,rgba(235,235,235,1) 31%);
-background: -o-linear-gradient(top, rgba(204,204,204,1) 0%,rgba(235,235,235,1) 31%);
-background: -ms-linear-gradient(top, rgba(204,204,204,1) 0%,rgba(235,235,235,1) 31%);
-background: linear-gradient(to bottom, rgba(204,204,204,1) 0%,rgba(235,235,235,1) 31%);
 	height:100%;
 	font-family:sans-serif;
 
@@ -43,7 +37,7 @@ footer {
 	font-size:.75em;
 	padding-top:30px;
 	padding-bottom:20px;
-	background-color:#ebebeb;
+
 	display:block;
 	text-align:center;
 	z-index: -1;
@@ -55,9 +49,17 @@ footer {
 	margin:auto;
 	overflow:hidden;
 	height:100%;
+	min-height:650px;
 	box-shadow: 0px 5px 5px 5px rgba(0,0,0,.15);
 	border-radius:0 0 10px 10px;
 	
+}
+
+@media screen and (max-width: 1289px){
+	#outer {
+	width:1250px;
+	}
+
 }
 
 #inner {
@@ -98,7 +100,7 @@ aside {
 	display:block;
 	height:100%;
 	top:0px;
-
+	min-height:650px;
 	padding:10px;
 	width:250px;
 	overflow:hidden;
@@ -109,7 +111,63 @@ aside {
 
 #logo {
 	display:block;
-	margin-left:67px;
+	margin-left:75px;
+	margin-bottom:30px;
+}
+
+#p1-tab, #p2-tab, #p3-tab, #p4-tab {
+	background-color:#1a1a1a;
+	vertical-align: middle;
+	text-align:right;
+	display:block;
+	height:40px;
+	border-radius:10px;
+	padding-top:20px;
+	padding-right:10px;
+	margin:2px;
+}
+
+#points-and-rank {
+	margin-top:50px;
+	display:block;
+	position:relative;
+	width:100%;
+}
+
+
+
+#points{
+	float:left;
+	width:100%;
+	text-align:center;
+}
+#points-counter{
+	font-size:70px;
+}
+
+#rank{
+	width:100%;
+	margin-left:65px;
+	margin-top:50px;
+	float:left;
+}
+
+/*squish the points and rank closer together if screen gets too small*/
+@media screen and (max-height: 768px){
+
+	#points-and-rank {
+		margin-top:20px;
+		display:block;
+		position:relative;
+		width:100%;
+	}
+	
+	#rank{
+	width:100%;
+	margin-left:65px;
+	margin-top:30px;
+	float:left;
+	}
 }
 
 #main {
