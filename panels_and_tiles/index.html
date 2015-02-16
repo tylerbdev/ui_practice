@@ -9,6 +9,9 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="jquery-ui.css">
+	<script src="jquery-1.11.2.min.js"></script>
+	<script src="jquery-ui.min.js"></script>
 	</head>
 <body>
 <div id="outer">
@@ -35,22 +38,46 @@
 				</div>
 				<div id="points-and-rank">
 					<div id="points">
-					<p id="points-counter">311</p>
-					<p>points</p>
+						<p id="points-counter">311</p>
+						<p>points</p>
 					</div>
 					<div id="rank">
 						<p>current rank</p><br>
 						<p><img src="badge1.png" height="90px"></img></p>
+					</div>
+					<div id="progress-bar">
+
+						<div id="inner-progress-bar">
+
+						</div>
 					</div>
 				</div>
 			</aside>
 
 		<section id="main">
 			<div id="choices-panel">
-				Choices Here
+			
+				<div class="drag-tile" id="choice-1">
+				tile test1
+				</div>
+				<div class="drag-tile" id="choice-2">
+				tile test2
+				</div>
+				<div class="drag-tile" id="choice-3">
+				tile test3
+				</div>
+				<div class="drag-tile" id="choice-4">
+				tile test4
+				</div>
 			</div>
 			<div id="selected-panel">
-				Selections Here
+				
+				<div id="drop-area">
+				drag area test
+				</div>
+				<div id="submit_buttom">
+					Submit
+				</div>
 			</div>
 		</section>
 	</div>
@@ -61,5 +88,7 @@
 
 
 </footer>
+<script src="game.js"></script>
+<script src="score.js"></script>
 </body>
 </html>
