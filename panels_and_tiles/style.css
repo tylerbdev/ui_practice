@@ -251,12 +251,14 @@ box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,.7);
 
 }
 
-#drop-area{
+.drop-area{
 	display:block;
-	width:100%px;
+	width:100%;
 	height:90%;
+	border:1px solid white;
 	background-color:#111;
 }
+
 
 #submit_buttom{
 	display:block;
